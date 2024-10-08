@@ -197,6 +197,7 @@ alist, like:
 KEY (optional) is a variable whose value is the API key, or
 function that returns the key."
   (declare (indent 1))
+  (gptel--log key "gptel-make-openai key")
   (let ((backend (gptel--make-openai
                   :curl-args curl-args
                   :name name
